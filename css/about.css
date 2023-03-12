@@ -1,0 +1,388 @@
+#about {
+    width: calc(100vw - 85px);
+    margin-left: 85px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title__about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.title__about h1 {
+    font-size: 13vw;
+    color: white;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+}
+
+.title__about h1 span {
+    position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.title__about img {
+    position: absolute;
+    width: 50%;
+}
+
+.title__about p {
+    position: absolute;
+    color: white;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 24%;
+    width: 40vw;
+}
+
+
+.cards__about {
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards__skills {
+    width: 30%;
+    max-width: 428px;
+    background : rgba(15, 15, 15, 1);
+    border-radius : 28px;
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-right: 20px;
+}
+
+.cards__skills::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    border-radius : 28px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient(-135deg, #a8a8a8 0%, #1f1f1f 50%);
+    z-index: -1;
+}
+
+.cards__skills h2 {
+    position: relative;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 100vmax;
+    color: white;
+    margin: 30px 0px;
+    background : linear-gradient(38.8deg, rgba(63, 173, 171, 1) 0%, rgba(59, 163, 169, 1) 8.99%, rgba(47, 137, 162, 1) 24.19%, rgba(28, 94, 151, 1) 43.63%, rgba(23, 82, 148, 1) 48.51%, rgba(26, 82, 149, 1) 60.71%, rgba(37, 81, 150, 1) 71.18%, rgba(55, 79, 153, 1) 81.03%, rgba(80, 77, 157, 1) 90.49%, rgba(111, 74, 163, 1) 99.6%, rgba(113, 74, 163, 1) 100%);
+}
+
+.cards__skills h2::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: absolute;
+    content: "Tools and Technologies";
+    vertical-align: center;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 1px;
+    left: 1px;
+    border-radius: 100vmax;
+    background : linear-gradient(90deg, rgba(8, 23, 23, 1) 0%, rgba(7, 22, 33, 1) 30.61%, rgba(6, 22, 41, 1) 48.51%, rgba(8, 20, 38, 1) 73.26%, rgba(14, 13, 27, 1) 94.5%, rgba(16, 10, 23, 1) 100%);
+}
+
+
+.cards__about .skills {
+    width: 100%;
+    margin: 20px 1%;
+    background : rgba(15, 15, 15, 1);
+    border-radius : 28px;
+    -moz-border-radius : 28px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 88px;
+    z-index: 3;
+}
+
+.cards__about .skills div {
+    background : rgba(26, 26, 26, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius : 19px;
+    position: relative;
+}
+
+.cards__about .skills div img {
+    width: 29px;
+}
+
+.cards__about .skills div::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius : 19px;
+    z-index: -1;
+}
+
+.cards__about .skills div:nth-child(1)::after {
+    background: linear-gradient(0deg, #9e7e00, #f0db63);
+}
+
+.cards__about .skills div:nth-child(2)::after {
+    background: linear-gradient(0deg, #7d2800, #ff8f54 70%);
+}
+
+.cards__about .skills div:nth-child(4)::after {
+    background: linear-gradient(0deg, #004f9e, #3e77f0);
+}
+
+.cards__about .skills div:nth-child(3)::after {
+    background: linear-gradient(0deg, #002e5c, #a1972a);
+}
+
+.cards__about .skills div:nth-child(5)::after {
+    background: linear-gradient(0deg, #9e6100 10%, #f0973e);
+}
+
+.cards__about .skills div:nth-child(6)::after {
+    background: linear-gradient(0deg, #400061, #8963f0);
+}
+
+.cards__about .skills div:nth-child(7)::after {
+    background: linear-gradient(0deg, #9e2a00 8%, #f07660);
+}
+
+.cards__about .skills div:nth-child(8)::after {
+    background: linear-gradient(0deg, #3a43a1 8%, #5865f2);
+}
+
+.cards__about .skills div:nth-child(9)::after {
+    background: linear-gradient(0deg, #9e0300, #f06060);
+}
+
+.cards__board {
+    width: calc(30% + 160px);
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.cards__board .imgl {
+    height: calc(55% - 20px);
+    margin-bottom: 20px;
+    max-width: 428px;
+    background : rgba(15, 15, 15, 1);
+    border-radius : 28px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cards__board .imgl::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    border-radius : 28px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient(135deg, #a8a8a8 0%, #1f1f1f 50%);
+    z-index: -1;
+}
+
+.cards__board .imgl h2 {
+    position: relative;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 100vmax;
+    color: white;
+    margin: 30px 0px;
+    background :  linear-gradient(38.8deg, rgba(21, 133, 110, 1) 0%, rgba(24, 135, 109, 1) 30.4%, rgba(35, 140, 106, 1) 56.53%, rgba(53, 148, 101, 1) 81%, rgba(72, 158, 95, 1) 100%);
+}
+
+.cards__board .imgl h2::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: absolute;
+    content: "Imagulation";
+    vertical-align: center;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 1px;
+    left: 1px;
+    border-radius: 100vmax;
+    background :  rgba(0,0,0,0.7);
+}
+
+.cards__board .imgl .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cards__board .imgl .content img {
+    width:38%;
+    border-radius: 23px;
+    position: relative;
+}
+
+.cards__board .imgl .content .content__text {
+    width: 72%;
+    padding: 7px;
+}
+
+.cards__board .imgl .content p {
+    color: white;
+}
+
+.cards__board .imgl .content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+    transition: all 0.2s ease;
+}
+
+.cards__board .imgl .content a:hover {
+    color: #ffffff;
+    background: #212121;
+    box-shadow: 0px 0px 20px #262626;
+}
+
+.cards__board .imgl .content a:hover svg {
+    fill: white;
+}
+
+.cards__board .scl {
+    height: 45%;
+    max-width: 428px;
+    background : rgba(15, 15, 15, 1);
+    border-radius : 28px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cards__board .scl::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    border-radius : 28px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient(155deg, #a8a8a8 0%, #1f1f1f 50%);
+    z-index: -1;
+}
+
+.cards__board .scl h2 {
+    position: relative;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 100vmax;
+    color: white;
+    margin: 30px 0px;
+    background : linear-gradient(38.8deg, rgba(255, 129, 94, 1) 0%, rgba(254, 128, 95, 1) 1.09%, rgba(200, 98, 129, 1) 46.88%, rgba(167, 79, 150, 1) 81.23%, rgba(155, 72, 158, 1) 100%);
+}
+
+.cards__board .scl h2::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: absolute;
+    content: "Socials";
+    vertical-align: center;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 1px;
+    left: 1px;
+    border-radius: 100vmax;
+    background :  rgba(0,0,0,0.7);
+}
+
+.scl .links {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.scl .links div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+    width: calc(33.34% - 10px);
+    margin: 0px 5px;
+    background : rgba(26, 26, 26, 1);
+    border-style : Solid;
+    border-color : rgba(51, 51, 51, 1);
+    border-width : 1px;
+    border-radius: 19px;
+    transition: all 0.2s ease;
+}
+
+.scl .links div a {
+    height: fit-content;
+    width: 100%;
+    border-radius: 19px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.scl .links div:hover {
+    background : rgb(47, 47, 47);
+}
+
+.scl .links div a img {
+    height: 45px;
+}
+
+@media screen and (min-width: 600px) {
+    .card-small {
+        grid-row: span 1 / auto;
+    }
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}

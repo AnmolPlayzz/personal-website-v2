@@ -1,3 +1,71 @@
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+    overflow: hidden; }
+
+html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+.has-scroll-smooth body {
+    overflow: hidden; }
+
+.has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh; }
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap; }
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%; }
+
+.c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; }
+.c-scrollbar:hover {
+    transform: scaleX(1.45); }
+.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1; }
+[data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1); }
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+    transform: scaleY(1.3); }
+
+.c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; }
+.has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0; }
+
+
 @keyframes pageload {
     0% {transform: scaleX(0%);
         transform-origin: right}
@@ -37,6 +105,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
+    background-color: black;
     font-family: Roboto;
 }
 
@@ -58,7 +127,7 @@ body::after {
     transform: scaleX(0);
     transform-origin: right;
     position: absolute;
-    animation: pageload 1.5s cubic-bezier(0.87, 0, 0.13, 1) 1s forwards;
+    animation: pageload 1.5s cubic-bezier(0.87, 0, 0.13, 1) 0.5s forwards;
 }
 
 body::before {
@@ -71,13 +140,14 @@ body::before {
     transform: scaleX(0);
     transform-origin: right;
     position: absolute;
-    animation: pageload 1.5s cubic-bezier(0.87, 0, 0.13, 1) 0.1s forwards;
+    animation: pageload 1s cubic-bezier(0.87, 0, 0.13, 1) 0.1s forwards;
     z-index: 20;
 }
 
 .main__viewport {
     width: 100%;
-    height: 100%;
+    height: fit-content;
+
 }
 
 .navbar {
@@ -91,6 +161,7 @@ body::before {
     height: 100%;
     width: 85px;
     position: fixed;
+    backdrop-filter: blur(20px);
 }
 
 .navbar__desktop__link {
@@ -166,4 +237,55 @@ body::before {
 .navbar__desktop__link a.active {
     text-stroke: 2px white;
     -webkit-text-stroke: 2px white;
+}
+
+.transition {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.83)), url("../assets/bgblur.png");
+    background-position-x: 15%;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 90vh;
+    overflow-y: hidden;
+}
+
+.transition div {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.33) !important;
+}
+
+.transition div:nth-child(1) {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 0vh;
+}
+
+.transition div:nth-child(2) {
+    height: 100vh;
+    background-color: #441e62;
+    position: absolute;
+    top: 10vh;
+}
+
+.transition div:nth-child(3) {
+    height: 100vh;
+    background-color: #180a1e;
+    position: absolute;
+    top: 30vh;
+}
+
+.transition div:nth-child(4) {
+    height: 100vh;
+    background-color: #0f0811;
+    position: absolute;
+    top: 70vh;
+}
+
+.mf-cursor::before {
+    backdrop-filter: blur(20px);
+}
+
+.mf-cursor-text {
+    color: black !important;
 }

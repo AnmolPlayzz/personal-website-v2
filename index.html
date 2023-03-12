@@ -7,10 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AnmolPlayzz's website!</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/common.css">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk=" crossorigin="anonymous">
     <script type="text/javascript" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
 </head>
 <body>
@@ -40,9 +44,84 @@
     </div>
     <div class="main__viewport">
         <div id="home">
-            <div class="container">
-                <h1>Hi! I'm <span class="bold">Anmol!</span></h1>
+            <div class="container" data-scroll data-scroll-speed="5">
+                <h1 data-scroll>Hi! I'm <span class="bold">Anmol!</span></h1>
                 <h2 class="heading"><span class="title title1">DEVELOPER</span><br><span class="title2"> + <span class="title">DESIGNER</span></span></h2>
+            </div>
+        </div>
+        <div class="transition">
+            <div data-scroll="" data-scroll-speed="4"></div>
+            <div data-scroll="" data-scroll-speed="6"></div>
+            <div data-scroll="" data-scroll-speed="8"></div>
+            <div data-scroll="" data-scroll-speed="8"></div>
+        </div>
+        <div id="about">
+            <div class="title__about">
+                <h1 data-scroll="">
+                    <span data-scroll="" data-scroll-speed="8" data-scroll-delay="1">A</span><span data-scroll=""
+                                                                              data-scroll-speed="8" data-scroll-delay="0.88">B</span><span
+                        data-scroll="" data-scroll-speed="8" data-scroll-delay="0.58">O</span><span data-scroll=""
+                                                                            data-scroll-speed="8" data-scroll-delay="0.38">U</span><span
+                        data-scroll="" data-scroll-speed="8" data-scroll-delay="0.28">T</span>
+                </h1>
+                <img data-scroll="" data-scroll-speed="6"  src="assets/face-overlay.png">
+                <p data-scroll="" data-scroll-speed="7">I’m Anmol, a 16 y/o boy from India who loves programming and computers.</p>
+            </div>
+            <div class="cards__about">
+                <div class="cards__skills">
+                    <h2>Tools and Technologies</h2>
+                    <div class="skills">
+                        <div class="card-tall" data-cursor-text="JavaScript"><img src="assets/js.svg" alt=""></div>
+                        <div class="card-small" data-cursor-text="HTML"><img src="assets/html.svg" alt=""></div>
+                        <div class="card-tall" data-cursor-text="Python"><img src="assets/py.svg" alt=""></div>
+                        <div class="card-small" data-cursor-text="CSS"><img src="assets/css.svg" alt=""></div>
+                        <div class="card-wide card-tall" data-cursor-text="Adobe Illustrator"><img src="assets/ai.svg" alt=""></div>
+                        <div class="card-tall" data-cursor-text="Adobe After Effects"><img src="assets/afx.svg" alt=""></div>
+                        <div class="card-small" data-cursor-text="Svelte"><img src="assets/svelte.svg" alt=""></div>
+                        <div class="card-wide card-tall" data-cursor-text="Discord Bots"><img src="assets/discord2.svg" alt=""></div>
+                        <div class="card-small " data-cursor-text="Git"><img src="assets/git.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="cards__board">
+                    <div class="imgl">
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                        <div class="content">
+                            <img src="assets/imgl.svg" alt="">
+                            <div class="content__text">
+                                <p>A discord bot that lets you play games like tic-tac-toe, wordle, connect four, and a lot, lot more right in your discord client. For completely free. No hidden paywalls.</p>
+                                <a href="https://imagulation.cf/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scl">
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                        <div class="links">
+                            <div>
+                                <a href="https://twitter.com/AnmolPlayzz">
+                                    <img src="assets/twitter2.svg">
+                                    <br><br>
+                                    Twitter
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/AnmolPlayzz">
+                                    <img src="assets/github2.svg">
+                                    <br><br>
+                                    Github
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://open.spotify.com/user/5zhzbww3g62vyu4g1ys07dot2?si=a08cb8c93e854ea6">
+                                    <img src="assets/spotify.svg">
+                                    <br><br>
+                                    Spotify
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
