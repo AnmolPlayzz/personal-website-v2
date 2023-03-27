@@ -111,3 +111,17 @@
     transform-origin: right;
     animation: text 1.2s cubic-bezier(0.87, 0, 0.13, 1) 3.2s forwards;
 }
+
+@media screen and (max-width: 738px) {
+    .container h2 {
+        font-size: 12vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    .container {
+        margin-left: 30px !important;
+    }
+    .container h2 {
+        font-size: 14vw !important;
+    }
+}

@@ -104,6 +104,7 @@
     left: 1px;
     border-radius: 100vmax;
     background : linear-gradient(90deg, rgba(8, 23, 23, 1) 0%, rgba(7, 22, 33, 1) 30.61%, rgba(6, 22, 41, 1) 48.51%, rgba(8, 20, 38, 1) 73.26%, rgba(14, 13, 27, 1) 94.5%, rgba(16, 10, 23, 1) 100%);
+    text-align: center;
 }
 
 
@@ -215,6 +216,7 @@
 .cards__board .imgl h2 {
     position: relative;
     width: fit-content;
+    height: fit-content;
     padding: 10px 20px;
     border-radius: 100vmax;
     color: white;
@@ -374,15 +376,94 @@
     height: 45px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and  (max-width: 1035px) {
+    .cards__about {
+        flex-direction: column;
+    }
+    .cards__skills {
+        width: 100%;
+        max-width: unset;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .skills div {
+        grid-area: span 1;
+    }
+    .cards__board {
+        width: 100%;
+        margin-left: 0;
+    }
+    .cards__board div {
+        max-width: unset !important;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .scl .links div {
+        padding: 28px 0px;
+    }
+    .skills {
+        width: 68% !important;
+        padding: 40px 0px;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr)) !important;
+        grid-auto-rows: 75px !important
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+
     .card-small {
-        grid-row: span 1 / auto;
+        grid-row: span 1;
     }
     .card-tall {
-        grid-row: span 2 / auto;
+        grid-row: span 2;
     }
 
     .card-wide {
-        grid-column: span 2 / auto;
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .title__about h1 {
+        font-size: 20vw;
+    }
+
+    .title__about img {
+        width: 65%;
+    }
+
+    .title__about p {
+        font-size: 4vw;
+        margin-top: 40%;
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .content__text {
+        width: 98% !important;
+    }
+    .links {
+        flex-direction: column;
+    }
+    .links div {
+        width: 98% !important;
+        margin: 10px 0px !important;
     }
 }
