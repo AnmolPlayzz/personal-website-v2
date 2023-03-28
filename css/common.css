@@ -333,6 +333,10 @@ body::before {
     font-size: 100px;
 }
 
+.mf-cursor::before {
+    background: rgba(255, 255, 255, 0.74) !important;
+}
+
 @media screen and (max-width: 650px) {
     .navbar__desktop {
         display: none;
@@ -411,5 +415,26 @@ body::before {
         text-decoration: none;
         color: white;
         font-size: 12vw;
+    }
+    .navbar__mobile__drawer a.active {
+        font-weight: bolder;
+    }
+    .navbar__mobile__icons {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 40px;
+    }
+
+    .navbar__mobile__icons img {
+        height: 25px;
+    }
+
+    .navbar__mobile__icons a {
+        height: 40px;
+        padding: 10px;
     }
 }

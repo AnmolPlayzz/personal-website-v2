@@ -65,3 +65,45 @@ if (vw<=900) {
     document.querySelector(".hz__fix").setAttribute("data-scroll-direction", "vertical");
     document.querySelector(".stick__hz").removeAttribute("data-scroll-target");
 }
+
+const links = document.querySelectorAll('a[data-scroll]');
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = document.querySelector(link.getAttribute('data-scroll'));
+        scroll.scrollTo(target);
+    });
+});
+
+const sections = document.querySelectorAll('.sect');
+scroll.on('scroll', () => {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionBottom = section.getBoundingClientRect().bottom;
+        if (sectionTop < window.innerHeight / 2 && sectionBottom > window.innerHeight / 2) {
+            links.forEach(link => {
+                if (link.getAttribute('href') === `#${section.id}`) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    });
+});
+
+const mblinks = document.querySelectorAll('.navbar__mobile__drawer a');
+mblinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        document.querySelector(".navbar__mobile__drawer").style.transform="translateY(-150%)"
+        document.querySelector(".navbar__mobile__drawer__1").style.transform="translateY(-130%)"
+        document.querySelector(".navbar__mobile__drawer__2").style.transform="translateY(-110%)"
+    });
+});
+
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+if (isMobile) {
+    document.querySelector(".mf-cursor").style.display="none"
+}
