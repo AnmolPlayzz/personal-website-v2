@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(../assets/Roboto-Regular.ttf) format('truetype');
-}
 
 @keyframes text {
     0% {transform: scaleX(0%);

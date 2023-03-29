@@ -55,6 +55,11 @@ To view this website locally, follow these steps:
 
     That's it! You should now be able to view and interact with the website locally on your machine.
 
+## Inspirations
+
+1. https://hamishw.com/ - "Developer + Designer" section
+2. https://normal.studio/en/ - Their transition rectangles
+
 ## Contributing
 
 If you'd like to contribute to this project, feel free to submit a pull request or open an issue to suggest changes or report bugs.
