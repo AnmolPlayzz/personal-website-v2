@@ -1,4 +1,6 @@
-<img src="https://cdn.discordapp.com/attachments/904245641495060560/1090303542474059786/image.png" align="center">
+<p align="center">
+  <img src="https://github.com/AnmolPlayzz/AnmolPlayzz/blob/main/759shots_so.png?raw=true" align="center">
+</p>
 <h1 align="center" style="font-weight: bolder;">Personal website</h2>
 <p align="center">My personal website 2023-2024 version. This is everything I learned about webdev in one year put to its ultimate test. </p>
 
@@ -26,6 +28,15 @@ This website was built using HTML, CSS, and JavaScript, with the following addit
 - Mouse Follower: for a custom mouse cursor that follows user movements
 - imagesLoaded: for preloading and handling images
 
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/AnmolPlayzz/AnmolPlayzz/blob/main/628shots_so.png?raw=true" align="center">
+</p>
+
+<p align="center">
+  <img src="https://github.com/AnmolPlayzz/AnmolPlayzz/blob/main/303shots_so.png?raw=true" align="center">
+</p>
 
 ## Installation and Usage
 
