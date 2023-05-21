@@ -173,6 +173,14 @@ body::before {
     backdrop-filter: blur(20px);
 }
 
+.navbar__desktop a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar__desktop a:active {
+    color: rgba(255, 255, 255, 0.25);
+}
+
 .navbar__desktop__link {
     height: 38%;
     display: flex;
@@ -334,6 +342,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40vh;
 }
 
 .footer h1 {
