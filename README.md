@@ -16,7 +16,7 @@
 
 </p>
 <p align="center">
-    <a href="https://anmolplayzz.netlify.app/">https://anmolplayzz.netlify.app//</a>
+    <a href="https://anmolplayzz.netlify.app/">https://anmolplayzz.netlify.app/</a>
 </p>
 <br>
 
